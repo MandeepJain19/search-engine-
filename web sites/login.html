@@ -1,0 +1,79 @@
+<html>
+  <head>
+     <title>Log in</title>
+	 <style>
+	 #d{
+	 background-image:url('E:/search/img/log in/pexels-photo-66192.jpeg');
+	 height:100%;
+background-repeat:no-repeat;
+background-position:center;
+background-repeat-x: no-repeat;
+background-repeat-y: no-repeat;
+-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;}
+	#f{
+	margin-top:150;
+	
+	margin-left:700;
+	font-size:30;
+	border:2px solid red;
+	border-radius:5%;
+	padding:2%;
+	text-color:white;
+	font-family:Trajan;
+	background-color: #ffffff;
+    
+    opacity: 0.8;
+    filter: alpha(opacity=10);}
+	
+	 #t{width:300;
+	height:35;
+	text-align:center;
+	}
+	 #tdi{
+	 text-align:center;
+	 }
+	 #b{margin-top:20;
+	  background-color:  #004d00;
+	 width:150;
+	 height:40;
+	 font-family:algerian;
+	 font-size:25;
+	 hover:border solid black;
+	 color:white;}
+	 </style>
+	 </head>
+<body>
+<div id="d">
+  <form  name="frm1">
+  <table id="f">
+  <tr><td colspan="2" id="tdi">Log in</td></tr>
+  <tr><td> User Name :</td><td><input type="text" name="nam" placeholder=" Enter User name" id="t"></td></tr><br>
+  <tr><td> Password :</td><td><input type="password" name="pass" placeholder=" Enter Password"id="t"></td></tr>
+   <tr><td colspan="2" id="tdi"> <input type="button" id="b" value="Log in" onClick="log();" >  </tr></td></tr>
+  <tr><td colspan="2" id="tdi" style="font-size:15;"><a href="#" onClick='alert( "your password is 8982152230 and user name is Mandeep");'>Forgot password</a></td></tr>
+    <tr><td colspan="2" id="tdi" style="font-size:15;"> <a href="signup.html">sign up</a>  for new user</td></tr>
+
+   </table>
+   dont have account
+  </form>
+</div>
+<Script type="Text/JavaScript">
+function log()
+{
+if((frm1.nam.value=="Mandeep") && (frm1.pass.value == "1234"))
+{
+window.open('index.html');
+}
+
+ 
+else 
+{
+	alert ("please enter correct User name and password!! ")
+	}
+}
+</Script>
+</body>	 
+</html>
